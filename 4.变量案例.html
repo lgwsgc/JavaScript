@@ -38,6 +38,32 @@
              qq = 164****4426;
              console.log(qq) -->可以使用，但不推荐，会变成全局变量
         */
+        /*
+        变量命名规范：
+            1.有字母(a-zA-Z)、数字(0-9)、下划线(_)、美元符号($)组成
+            2.严格区分大小写
+            3.不能以数字开头
+            4.不能是关键字、保留字。eg：var for while
+            5.变量名必须有意义，不能都是中文缩写之类，eg：mmd
+            6.遵守驼峰命名法。首写字母小写，后面单词的首字母大写 eg：myName
+            7.推荐翻译网站：有道，爱词霸
+        */
+        /*
+        交换两个变量的值 a = b:把b的值传给a
+        1.需要一个临时变量temp
+        2.把Apple1给temp
+        3.把Apple2Apple1
+        4.把temp给Apple2
+        */
+        var temp,
+            Apple1 = '青苹果',
+            Apple2 = '红苹果',
+            temp = Apple1;
+        Apple1 = Apple2;
+        Apple2 = temp
+        console.log(Apple1)
+        console.log(Apple2)
+
 
     </script>
 </head>
