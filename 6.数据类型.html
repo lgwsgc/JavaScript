@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量的数据类型</title>
+
+    <script>
+        /*
+            //int num =10; java
+            //var num;     这里的num无法确定属于那种数据类型
+            var num = 10; //num 属于数字型，
+            var uname = 'pink' //属于字符串
+            //js 的变量类型是只有程序在运行过程中。根据等号右边的值来确定的
+            //js 是动态语言，变量的数据类型可以变化
+            var x = 18; // 数字型
+            x = 'pink'  // 字符串
+        */
+
+        /*
+            简单数据类型(基本数据类型)                          默认值
+            Number      :数字型，包括整型值和浮点型值，21,0.21   0      
+
+            Boolean     :布尔,如true， false 等价 1,0           false
+            String      :字符串(都带引号)                       ''
+            Undefined   :var x; 声明变量但为赋值就是            undefined
+            Null        :var x=null; 声明了变量a为空值          null
+
+
+            注意：js中八进制前面加0，十六进制前面加0x
+        */
+        var num = 18;  //整型
+        var PI = 'pink'; //字符串
+        var num1 = 010;//八进制
+        console.log(num1)
+        var num2 = 0xf;//十六进制
+        console.log(num2)
+        // 数字型最大值；
+        console.log(Number.MAX_VALUE)
+        // 数字型最小值；
+        console.log(Number.MIN_VALUE)
+        // 无穷大
+        console.log(Number.MAX_VALUE * 2)
+        // 无穷小
+        console.log(-Number.MAX_VALUE * 2)
+        //Nan 非数值 not a number
+        console.log('lgw' - 100)
+        // 判断一个变量是否是数字
+        console.log(isNaN(18))
+        console.log(isNaN('pink'))
+        /*
+        字符串转义字符(写在引号内)
+            \n  换行符 n是newline
+            \\  斜杠
+            \'  单引号
+            \"  双引号
+            \t  tab 缩进
+            \b  空格，b是blank的意思
+        */
+
+        alert('阿塔卡马沙漠. 阿塔卡马沙漠（Atacama Desert）， 西班牙语 作Desierto de Atacama。\n 是南美洲西海岸中部的沙漠地区，在 安第斯山脉 和 太平洋 之间南北绵延约1000千米，总面积约为18.13万平方千米，主体位于智利境内，也有部分位于秘鲁、玻利维亚和 阿根廷 。. 介于 南纬 18°-28°之间，南北长约1100千米，从沿海到东部山麓宽100多千米。\n. 在 副热带高气压带 下沉气流、离岸风和 秘鲁寒流 综合影响下，使本区成为世界最干燥的地区之一，被称为世界的“干极”，且在大陆西岸 热带干旱气候 类型中具有鲜明的独特性，形成了 沿海 、纵向狭长的沙漠带。')
+    </script>
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
