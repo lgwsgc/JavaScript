@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeof & 字面量 & 数据类型转换</title>
+
+    <script>
+        //typeof 变量名 可以查询变量是什么类型
+        var num = 10;
+        console.log(typeof num);//number
+        var str = 'pink';
+        console.log(typeof str);//string
+        var undef = undefined;
+        console.log(typeof undef);//undefined
+        var buer = true;
+        console.log(typeof buer);//undefined
+        var kong = null;
+        console.log(typeof kong);//object
+        // 字面量 有数字、字符串、布尔字面量，用来表达这个值
+
+        // 数据类型转换 ：将一种转为另一种
+        // 转成字符串
+        // 1.数字转为字符串
+        var num = 10;
+        var str = num.toString()
+        console.log(str);
+        console.log(typeof str);
+        //2.利用函数string()
+        console.log(String(num));
+        //3.利用+进行拼接字符串实现转换,称之为隐式转换，最常使用
+        console.log(num + "");
+
+        // 转成数字型
+        // 1.parseInt(变量),可以把字符型转换为数字型，得到的是整数，小数的换取整，会去掉px单位
+
+        // var age = prompt('请输入你的年龄:');
+        // console.log(parseInt(age));
+        // console.log(parseInt('rm120px'));//结果是NaN
+
+        // 2.parseFloat(变量),可以把字符型转换为数字型，得到的是浮点数，会去掉px单位
+        console.log(parseFloat('3.14'));// 可以把字符型转换为浮点数
+        // console.log(parseFloat('rm120px'));//结果是NaN
+        // 3.利用Number(变量)
+        var str1 = '123';
+        console.log(Number(str1));
+        console.log(Number('12'));
+        // 4.利用算术运算 - * / 隐式转换
+        console.log('12' - 0);//12
+        console.log('123' - '120');//3
+        console.log('123' * 1);
+        // 转成字符串
+
+        /*
+        案例：在页面中弹出一个输入框，输入出生年份后，可以计算出我们的年龄
+
+        */
+        var born = prompt('请输入出生年份:'),
+            my_age = 2022 - born // 此处是隐式转换
+        alert('你的年龄是' + my_age + '岁')
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
