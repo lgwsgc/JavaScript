@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if语句</title>
+
+    <script>
+        //1.语法结构
+        /*
+
+        1.if (条件表达式) {
+            pass//执行语句
+        }
+        2.if (条件表达式) {
+            pass//执行语句
+        }else if(条件表达式){
+            pass
+        }else if(条件表达式){
+            pass
+        }else{
+            pass
+        }
+        */
+        //2.执行思路,条件表达式为真执行，为假不执行，或者执行else
+        //3.测试
+        /* if (3 > 8) {
+             alert('cuole')
+            }
+        */
+        var mark = prompt('请输入你的成绩:');
+        if (mark > 90) {
+            alert('成绩等级为A')
+        } else if (mark > 80 && mark <= 90) {
+            alert('成绩等级为B')
+        } else if (mark > 70 && mark <= 80) {
+            alert('成绩等级为C')
+        } else if (mark > 60 && mark <= 70) {
+            alert('成绩等级为D')
+        } else {
+            alert('成绩等级为E')
+        }
+
+        //进入网吧
+        /*
+        var age = prompt('请输入你的年龄:');
+        // age = parseInt(age);
+        if (age >= 18) {
+            alert('开机成功');
+        }
+        else {
+            alert('等过两年再来玩吧');
+        }
+        */
+        //判断闰年,怎么判断输入的是数字呢？未解决
+        var year = prompt('请输入年份:');
+        console.log(isNaN('year'));
+        // if (isNaN('year') == 1) {
+        //     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        //         alert('该年份是闰年' + '\n' + year);
+        //     }
+        //     else {
+        //         alert('该年份是平年');
+        //     }
+        // }
+        // else {
+        //     alert('请输入数字');
+        // }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
