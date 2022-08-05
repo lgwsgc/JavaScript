@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符</title>
+
+    <script>
+        console.log(1 + 1);
+        console.log(1 - 1);
+        console.log(1 * 1);
+        console.log(1 / 1);
+        //取模(取余) %
+        console.log(6 % 4);//2
+        //浮点数 因精度，运算会出现问题
+        console.log(0.1 + 0.2);// 0.3000000004
+        console.log(0.07 * 100);//7.0000000001
+        //不能用浮点数去判断是否相等
+        var num = 0.1 + 0.2
+        console.log(num == 0.3);//false
+        //表达式：由数字，运算符，变量组成的式子
+        //返回值：表达式的结果，即num
+        //递增递减运算符，配合变量使用
+        //前置递增运算符，++num，自加1，类似num = num + 1,先自加1，后返回值
+        var age = 10;
+        ++age;
+        console.log(age);// age = 11
+        //后置递增运算符，num++，自加1，类似num = num + 1，先返回原值，后自加
+        age++;
+        console.log(age);// age = 11，而不是12
+        //前置和后置单独使用效果相同
+        var num = 10;
+        num1 = num++ + 2;
+        console.log(num1, num);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
