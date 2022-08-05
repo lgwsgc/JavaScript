@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转换为boolean&案例</title>
+
+    <script>
+        /* 
+       boolean转换:1.代表空、否定的会转为false，如'',0,NaN,null,undefined
+                   2.其余值都会转为true
+       */
+        console.log(Boolean(''));
+        console.log(Boolean(0));
+        console.log(Boolean(NaN));
+        console.log(Boolean(undefined));
+        console.log(Boolean(null));
+        console.log("----------------------");
+
+        console.log(Boolean(123));
+        console.log(Boolean('null'));
+        console.log(Boolean('nihao'));
+        /* 
+        加法器
+        var num1 = prompt("请输入第一个加数"),
+            num2 = prompt("请输入第二个加数"),
+            result = parseFloat(num1) + parseFloat(num2)
+
+        alert(result)
+        */
+        /* 
+       交换两个变量
+       */
+        var apple = '苹果',
+            banana = '香蕉',
+            temp = ''
+
+        temp = apple;
+        apple = banana;
+        banana = temp;
+        console.log(apple, banana)
+        /* 
+       依次询问并获取用户姓名，年龄，性别，并打印信息
+       */
+        var uname = prompt('请输入姓名:'),
+            uage = prompt('请输入年龄:'),
+            usex = prompt('请输入性别:')
+
+        alert('姓名:' + uname + '\n' + '年龄:' + uage + '\n' + '性别:' + usex + '\n')
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
