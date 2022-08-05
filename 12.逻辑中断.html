@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逻辑中断 & 运算符优先级</title>
+
+    <script>
+        //逻辑中断很重要，会影响程序的执行
+        //与 短路运算 如果表达式1为真，则返回表达式2，表达式1为假，则返回表达式0
+        console.log(123 && 234);//234
+        console.log(0 && 234);//0
+        //或 短路运算 如果表达式1为真，则返回表达式1，表达式1为假，则返回表达式2
+        console.log(123 || 234);//123
+        console.log(0 || 234);//234
+
+        //优先级,依次递减
+        //1.小括号      ()
+        //2.一元运算符  ++ -- ！
+        //3.算数运算符  + - * /
+        //4.关系运算符  > >= <= <
+        //5.相等运算符  == != === !==
+        //6.逻辑运算符  先&& 后||
+        //7.赋值运算符  =
+        //8.逗号运算符  ,
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
