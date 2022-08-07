@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch语句</title>
+
+    <script>
+        /*
+        1.switch 语句是多分支语句 可以实现多选1
+        2.语法结构  switch:转换,开关    case:小例子，选项
+        switch (表达式) {
+            case value1:
+                执行语句1;
+                break;
+            case value2:
+                执行语句2;
+                break;
+        ...
+            default: 执行最后的语句;
+        }
+        3.执行思路 利用表达式的值 和 case 后面的选项值匹配，如果匹配上，就执行case中的语句，没有匹配上就执行default中语句
+        4.注意:     1.表达式中一般是用变量
+                    2.表达式的值和value值必须完全一致:数据类型和数值完全相同
+                    3.break 如果case中没有break，则不会退出，继续执行下一个case
+        */
+        var friut = prompt('请输入您查询的水果')
+        switch (friut) {
+            case '苹果':
+                alert('苹果:5.8元/500g');
+                break;
+            case '香蕉':
+                alert('香蕉:2.8元/500g');
+                break;
+            case '桃子':
+                alert('桃子:3.9元/500g');
+                break;
+            case '凤梨':
+                alert('凤梨:6.5元/500g');
+                break;
+            default: alert('没有查询到该水果价格');
+        }
+        /*
+        switch 和 if else if区别：
+            1.一般情况下可以互换
+            2.switch...case语句处理的case为比较确定的值，if else语句更加灵活，常用于范围判断
+            3.分支较少，使用if效率更高
+            4.分支较多，使用switch效率更高
+        */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
