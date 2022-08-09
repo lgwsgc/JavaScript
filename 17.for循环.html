@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环</title>
+
+    <script>
+        /*
+        循环体:一组被重复执行的语句；
+        循环终止条件:决定能否继续执行
+        循环语句=循环体+循环终止条件
+        */
+        //1.for循环 重复执行某些代码，通常与计数有关
+        //2.for语法结构  for(初始化变量;条件表达式;操作表达式){
+        //                  循环体  }
+        //3.初始化变量 var声明的一个普通变量，通常作为计数器使用
+        //4.条件表达式 决定每一次循环是否继续执行，也就是终止条件
+        //5.操作表达式 每次循环最后执行的代码，经常用于计数器变量的进行更新(递增/递减)
+
+        //案例1
+        // var num = prompt('请输入循环次数');
+        // for (var i = 1; i <= num; i++) {
+        //     console.log(i + '.我错了')
+        // }
+        //案例2:请输入1-x的求和
+        // var sum = 0,
+        //     max = prompt('请输入1-x的求和:')
+        // for (var i = 1; i <= max; i++) {
+        //     // sum = sum + i;
+        //     sum += i;
+        // }
+        // console.log(sum);
+        //案例3:1-100的平均数
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     // sum = sum + i;
+        //     sum += i;
+        // }
+        // console.log(sum / 100);
+        // //案例4:1-100之间所有奇数和偶数之和
+        // var sum1 = 0,
+        //     sum2 = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 != 0) {
+        //         sum1 += i;
+        //     }
+        //     else {
+        //         sum2 += i;
+        //     }
+        // }
+        // console.log('奇数和:' + sum1);
+        // console.log('偶数和:' + sum2);
+        //案例5:1-100之间能被三整除之数的和
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0) {
+        //         sum += i;
+        //     }
+        // }
+        // console.log('1-100之间能被三整除之数的和:' + sum);
+        //案例6:输入班级人数，在依次输入每个同学的成绩，最后打印班级总成绩及平均成绩(拓展，输出最高分和最低分)
+        var marks = 0,
+            max = 0,
+            min = 100,
+            people = prompt('请输入班级人数');
+        for (var i = 1; i <= people; i++) {
+            mark = parseFloat(prompt('学生' + i + '的成绩'));
+            if (max < mark) {
+                max = mark;
+            }
+            if (min > mark) {
+                min = mark;
+            }
+            marks += mark
+        }
+        console.log('该班学生总成绩为:' + marks);
+        console.log('该班学生平均成绩为:' + marks / people);
+        console.log('该班学生最高成绩为:' + max + '分');
+        console.log('该班学生最低成绩为:' + min + '分');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
