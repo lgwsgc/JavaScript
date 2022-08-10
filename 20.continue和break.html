@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue&break</title>
+
+    <script>
+        //关键字 continue:推出本次循环，直接进到下一次循环
+        for (var i = 1; i <= 6; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log('我正在吃第' + i + '个西瓜');
+        }
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                continue;
+            };
+            sum += i;
+        }
+        console.log(sum)
+        //关键字 break:直接退出循环
+        for (var i = 1; i <= 6; i++) {
+            if (i == 3) {
+                break;
+            }
+            console.log('我正在吃第' + i + '个西瓜');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
